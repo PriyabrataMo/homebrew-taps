@@ -5,21 +5,21 @@
 class Currency < Formula
   desc "A simple CLI for currency conversion"
   homepage "https://github.com/PriyabrataMo/currency"
-  version "0.11"
+  version "0.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/PriyabrataMo/currency/releases/download/v0.11/currency_0.11_darwin_amd64.tar.gz"
-      sha256 "0687caa4208069da3f6def5aca19147c183bd0b3e889ef0a2607b8a7331f6368"
+      url "https://github.com/PriyabrataMo/currency/releases/download/v0.12/currency_0.12_darwin_amd64.tar.gz"
+      sha256 "3fc3fbd71bdbc08f8794693ba8cf83716dc3e9f516fbb77ea1dc838119032959"
 
       def install
         bin.install "currency"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/PriyabrataMo/currency/releases/download/v0.11/currency_0.11_darwin_arm64.tar.gz"
-      sha256 "2ef3587a59b50ca3b178971d8c4f534c6adaaef9fc7a0a7ab11665bb3cd75d96"
+      url "https://github.com/PriyabrataMo/currency/releases/download/v0.12/currency_0.12_darwin_arm64.tar.gz"
+      sha256 "9b5c4f79df5913b728d76feee76161b87e9809d41b81d7f27e28847e559c3c18"
 
       def install
         bin.install "currency"
@@ -30,8 +30,8 @@ class Currency < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/PriyabrataMo/currency/releases/download/v0.11/currency_0.11_linux_amd64.tar.gz"
-        sha256 "3d0af0cc521251f0a4df2d7c30030d53de004c3c9f5565cef97c99641daaf7e2"
+        url "https://github.com/PriyabrataMo/currency/releases/download/v0.12/currency_0.12_linux_amd64.tar.gz"
+        sha256 "d46cee095c226b13f48c4a54621a1918a4526f58e92968460e3cd952f2492350"
 
         def install
           bin.install "currency"
@@ -40,8 +40,8 @@ class Currency < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/PriyabrataMo/currency/releases/download/v0.11/currency_0.11_linux_arm64.tar.gz"
-        sha256 "1ae23b55293c491c6fa0d4cdd97aed34743c89b889ff18c013a251b3cba1c9ba"
+        url "https://github.com/PriyabrataMo/currency/releases/download/v0.12/currency_0.12_linux_arm64.tar.gz"
+        sha256 "c0f05b054ad863d12020e04e750dde6e7f4befc30b4410b56a60e51d939fd18d"
 
         def install
           bin.install "currency"
